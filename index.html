@@ -3,18 +3,19 @@
 <head>
     <meta charset="utf-8">
     <title>Check ur password!</title>
-    <link rel="stylesheet" type="text/css" hred="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-<h2>Check if your password is strong enought!</h2>
+<div id="container">
+<h3>Check if your password is strong enought!</h3>
 
     <form action="index.php" method="POST">
-        <input type="password" id="psw" name="passwd" onkeyup="verifyPswd('psw')" placeholder="Your Password">
+        <input type="password" id="psw" name="passwd" size="25" onkeyup="verifyPswd('psw')" placeholder="Your Password">
     </form>
 
-<h3>Password must contain the following: </h3>
-<p id="characters" class="invalid">Min 8 characters</p>
+<h4>Password must contain the following: </h4>
+<p id="characters" class="invalid">Minimum 8 characters</p>
 <p id="lletter" class="invalid">A lowercase letter</p>
 <p id="uletter" class="invalid">A uppercase letter</p>
 <p id="number" class="invalid">A number</p>
@@ -23,6 +24,7 @@
 <form>
     <input type="submit" id="btn" value="Send" disabled>
 </form>
+</div>
 
 <script language="JavaScript" type="text/javascript" src="script.js"></script>
 </body>
