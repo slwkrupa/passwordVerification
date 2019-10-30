@@ -10,16 +10,20 @@
 <h2>Check if your password is strong enought!</h2>
 
     <form action="index.php" method="POST">
-        <input type="password" id="psw" name="passwd">
+        <input type="password" id="psw" name="passwd" onkeyup="verifyPswd('psw')" placeholder="Your Password">
     </form>
 
 <h3>Password must contain the following: </h3>
+<p id="characters" class="invalid">Min 8 characters</p>
 <p id="lletter" class="invalid">A lowercase letter</p>
 <p id="uletter" class="invalid">A uppercase letter</p>
 <p id="number" class="invalid">A number</p>
-<p id="characters" class="invalid">Min 6 characters</p>
+<p id="schar" class="invalid">A special character</p>
 
+<form>
+    <input type="submit" id="btn" value="Send" disabled>
+</form>
 
-<script language="javascript" text="text/javascript" src="script.js"></script>
+<script language="JavaScript" type="text/javascript" src="script.js"></script>
 </body>
 </html>
